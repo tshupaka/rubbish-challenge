@@ -1,0 +1,74 @@
+.login-popup {
+    position: absolute;
+    padding: 20px;
+    right: 100px;
+    top: 50px;
+    width: 300px;
+    height: 200px;
+    background: rgba(255,255,255,0.7);
+  }
+  
+  .title-popup {
+    width: 100%;
+    margin: auto;
+   
+  }
+  
+  
+  .connect-popup {
+    width: 130px;
+    margin: auto;
+    padding: 5px;
+  }
+  
+  .signin-popup {
+    width: 100px;
+    margin: auto;
+    padding: 5px;
+  }
+
+.main-background {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+} 
+
+.img-background {
+  width: 100%;
+}
+
+
+.connect-popup {
+    width: 130px;
+    margin: auto;
+    padding: 5px;
+  }
+  
+  .signin-popup {
+    width: 100px;
+    margin: auto;
+    padding: 5px;
+  }
+  
+ 
+  
+  .btn-success {
+    opacity: 0.8;
+    background-color: #218838;
+  }
+  
+  .btn-success:hover {
+    background-color: #1a4e26
+  }
+  
+  .btn-outline-success {
+    color: #218838;
+  }
+  
+  .btn-outline-success:hover {
+    color: #FFFFFF;
+    background-color: #1a4e26
+  
+  }
+  

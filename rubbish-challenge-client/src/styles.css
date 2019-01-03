@@ -1,0 +1,21 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+/* You can add global styles to this file, and also import other style files */
+.btn-success {
+    opacity: 0.8;
+    background-color: #218838;
+  }
+  
+  .btn-success:hover {
+    background-color: #1a4e26
+  }
+  
+  .btn-outline-success {
+    color: #218838;
+  }
+  
+  .btn-outline-success:hover {
+    color: #FFFFFF;
+    background-color: #1a4e26
+  
+  }

@@ -1,0 +1,20 @@
+<div class="table-responsive">
+  <table class="table">
+      <thead>
+          <tr>
+              <th></th>
+              <th *ngFor="let userRubbishSummary of userRubbishSummaries">{{userRubbishSummary.username}}</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th scope="row">Poids 30 jours</th>
+              <td *ngFor="let userRubbishSummary of userRubbishSummaries">{{userRubbishSummary.weight30d}} kg</td>
+          </tr>
+          <tr>
+              <th scope="row">Poids année</th>
+              <td *ngFor="let userRubbishSummary of userRubbishSummaries">{{userRubbishSummary.weight365d}} kg</td>
+          </tr>
+      </tbody>
+  </table>
+</div>

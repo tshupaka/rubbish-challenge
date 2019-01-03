@@ -1,0 +1,18 @@
+<div class="row">Evolution</div>
+<div class="row">
+        <div class="col-xs-12">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label *ngFor="let user of users" class="btn btn-primary">
+                    <input type="checkbox" autocomplete="off" (click)="setUserClicked('1')"> {{user.name}}
+                </label>
+            </div>
+        </div>
+</div>
+
+<div class="row" id="histo" style="width: 100%; height:300px;"></div>
+<hr/>
+<div class="row">Podium 3 mois</div>
+<div class="row" id="podium3Month" style="width: 100%; height:300px;"></div>
+<hr/>
+<div class="row">Podium général</div>
+<div class="row" id="podiumTotal" style="width: 100%; height:300px;"></div>

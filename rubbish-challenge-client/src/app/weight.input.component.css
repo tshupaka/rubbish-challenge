@@ -1,0 +1,34 @@
+.row {
+	text-align: center;
+}
+
+input {
+	height: 50px;
+	width: 75px;
+	display: inline-block;
+	margin: 5px;
+}
+
+button {
+	margin: 5px;
+}
+
+[class*="col-"] {
+	line-height: 40px;
+	text-align: center;
+}
+
+label {
+	width: 75px;
+}
+
+.content {
+	border: solid 1px black;
+	border-radius: 10px;
+	max-width: 600px;
+	padding: 20px;
+}
+
+.table-histo {
+	width: 100%;
+}

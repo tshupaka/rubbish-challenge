@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<meta charset="UTF-8" />
+
+</head>
+<body style="color: #555555;">
+	<div
+		style="max-width: 500px; margin: auto; border: 1px solid #444444; border-radius: 5px; background: #F8F8F8; padding: 10px;">
+
+		<p>Bonjour,</p>
+
+		<p>Vous avez reçu une invitation à venir découvrir le site  
+		
+		<span style="font-size: 14pt; color: #000000; text-align:center;">www.missionzerodechez.fr</span>
+		de la part <span th:text="${username}"></span> (<span th:text="${userEmail}"></span>).</p>
+		
+		<pre>
+		<span th:text="${message}"></span>
+		</pre>
+		<p>Pour rejoindre la communauté zéro déchet, suivi le lien ci-dessous : </p>
+				<p style="font-size: 14pt; color: #000000; text-align:center;">
+			Cliquez sur <a
+				th:href="${acceptURL}">ce
+				lien</a> pour finaliser votre inscription
+		</p>
+		<p> Vous pouvez refuser d'accéder à ce groupe en cliquant sur <a
+				th:href="${declineURL}">ce
+				lien</a></p>
+		<p>A bientôt !</p>
+		
+		<p>L'équipe missionzerodechet.fr</p>
+	</div>
+</body>
+</html>

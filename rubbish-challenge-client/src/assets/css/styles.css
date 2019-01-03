@@ -1,0 +1,13 @@
+a {
+    color: #218838;
+  }
+  
+a:hover {
+    color: #1a4e26
+  }
+  
+.navbar-color {
+    background-color: #ffffff;
+    border: 1px solid #218838;
+}
+

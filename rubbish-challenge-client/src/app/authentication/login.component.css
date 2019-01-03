@@ -1,0 +1,23 @@
+
+
+.login-visible {
+    visibility:visible;
+    opacity:1;
+    transition:opacity 2s linear;
+}
+
+.login-hidden {
+    visibility:hidden;
+    opacity:0;
+}
+
+.password-visible {
+    visibility:visible;
+    transition:opacity 2s linear;
+}
+
+.password-hidden {
+    visibility:hidden;
+    opacity:0;
+    
+}

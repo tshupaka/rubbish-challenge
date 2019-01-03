@@ -1,0 +1,16 @@
+<app-private-header></app-private-header>
+<hr/>
+<div class="row">
+    <div class="col-lg-8">
+        <app-rubbish-form (addNewRubbish)="rubbishesHistory.addNewRubbish($event)"></app-rubbish-form>
+        <app-rubbish-graph-history #rubbishGraphHistory></app-rubbish-graph-history>
+    </div>
+    <div class="col-lg-4">
+        <app-rubbish-history #rubbishesHistory></app-rubbish-history>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+    <app-group-manager></app-group-manager>
+</div>
+</div>

@@ -1,0 +1,19 @@
+<div class="">
+    <h3>Mes groupes</h3>
+    <div class="row text-content">
+        <nav class="col-md-3 sidebar">
+            <app-group-menu (selectGroup)="groupSelected($event);infoGroup.updateGroup($event)"></app-group-menu>
+        </nav>
+        <main class="col-md-9">
+            <app-info-group #infoGroup></app-info-group>
+
+        </main>
+    </div>
+
+</div>
+
+<hr>
+<footer class="row">
+    <a href="legales.html">Mentions légales</a>&nbsp;|&nbsp;
+    <a href="contact.html">contact</a>
+</footer>

@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let group of groups" [class.group-active]="group.active" class="nav">
+        <a class="nav-link" (click)="setGroupActive(group)">{{group.name}}</a>
+    </li>
+</ul>

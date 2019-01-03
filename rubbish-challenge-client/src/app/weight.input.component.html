@@ -1,0 +1,44 @@
+
+<div class="content">
+
+	<form #form="ngForm" (submit)="addRubbish(form)" novalidate>
+		<div class="row">
+			<div class="col-md-4 input">
+				<label for="weight">Poids</label> <input type="number"
+					class="form-control" #msgWeight="ngModel" ngModel name="weight"
+					width="50" />
+			</div>
+			<div class="col-md-4 input">
+				<label for="weight">Occupant</label> <input type="number"
+					class="form-control" #msgNumber="ngModel" ngModel name="number"
+					width="20" />
+			</div>
+			<div class="col-md-4 add-button">
+				<button type="submit" class="btn-lg btn-primary">Ajouter</button>
+			</div>
+		</div>
+	</form>
+	<div class="table-responsive table-histo">
+		<table width="100%">
+			<tr>
+				<th width="100px;">Date</th>
+				<th style="text-align:center;">Poids</th>
+				<th style="text-align:center;">Nb occupants</th>
+				<th style="text-align:center;">Supprimer</th>
+			</tr>
+
+
+			<tr *ngFor="let rubbish of rubbishes">
+
+				<td >{{rubbish.date}}</td>
+				<td style="text-align:center;">{{rubbish.weight}}</td>
+				<td style="text-align:center;">{{rubbish.nbUser}}</td>
+
+				<td style="text-align:center;"><span class="glyphicon glyphicon-remove"
+					(click)="deleteRubbish(rubbish.id)"></span></td>
+
+			</tr>
+		</table>
+
+	</div>
+</div>

@@ -1,0 +1,13 @@
+.news {
+    border: 1px solid #218838;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0 0 0;
+  }
+  
+  
+  .news-title {
+    border-bottom: 1px solid #218838;
+    background-color: #218838;
+    padding: 0px 5px 0px 5px;
+  }
