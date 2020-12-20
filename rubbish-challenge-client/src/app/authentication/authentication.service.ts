@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams, HttpResponse } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/observable/throw';
+import { map, catchError } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 
 
 @Injectable()
@@ -17,15 +15,15 @@ export class AuthenticationService {
 
     login(email, password): Observable<any> {
         return this.http.post('api/auth', { 'email': email, 'password': password }, { observe: 'response' })
-            .map((response: HttpResponse<any>) => {
+            .pipe(map((response: HttpResponse<any>) => {
                 console.log(response.headers);
                 const user = response.headers.get('Authorization');
                 console.log('token', user);
                 localStorage.setItem('currentUser', user);
                 return user;
 
-            })
-            .catch((error: any) => Observable.throw(error || 'Server error'));
+            }),
+            catchError((error: any) => Observable.throw(error || 'Server error')));
     }
 
     register(email): Observable<any> {

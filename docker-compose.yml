@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+
+
+  rubbish-challenge-postgres:
+    container_name: rubbish-challenge-postgres
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=rubbish-challenge
+      - POSTGRES_PASSWORD=rubbish-challenge-password
+      - POSTGRES_DB=rubbish
+    labels:
+      - 'traefik.enable=false'
+    ports:
+      - 5432:5432
+    volumes:
+      - /data:/var/lib/postgresql/data
+
+  rubbish-challenge-server:
+    container_name: rubbish-challenge-server
+    depends_on:
+      - rubbish-challenge-postgres
+
+    build:
+      context: ./rubbish-challenge-server
+    ports:
+      - 8080:8080
+      - 4321:4321
+
+
+  rubbish-challenge-client:
+    container_name: rubbish-challenge-client
+    build:
+      context: ./rubbish-challenge-client
+    ports:
+      - 4200:4200
+

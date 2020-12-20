@@ -3,14 +3,12 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './authentication/login.component';
 import { WeightInputComponent } from './weight.input.component';
 import { RouterModule } from '@angular/router';
 
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { StatisticsComponent } from './statistics.component';
-import { AuthenticationModule } from './authentication/authentication.module';
 import { PublicModule } from './public/public.module';
 import { PrivateModule } from './private/private.module';
 import { MainComponent } from './public/main.component';

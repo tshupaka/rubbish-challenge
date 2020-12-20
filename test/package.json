@@ -1,16 +1,13 @@
 {
-  "name": "rubbish-challenge-client",
+  "name": "test",
   "version": "0.0.0",
-  "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --host 0.0.0.0 --proxy-config proxy.conf.json",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "build_prod": "ng build --prod --aot",
-    "minify": "uglifyjs dist/bundle.js --screw-ie8 --compress --mangle --output dist/bundle.min.js"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -22,14 +19,7 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
-    "@ng-bootstrap/ng-bootstrap": "^8.0.0",
-    "angular2-jwt": "^0.2.3",
-    "bootstrap": "^4.5.3",
-    "core-js": "^2.4.1",
-    "jquery": "^3.3.1",
-    "popper": "^1.0.1",
-    "popper.js": "^1.14.1",
-    "rxjs": "^6.6.3",
+    "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },

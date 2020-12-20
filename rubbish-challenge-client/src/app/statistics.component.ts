@@ -1,8 +1,6 @@
 /// <reference path='../assets/typings/AmCharts.d.ts' />
 
-import { Component } from '@angular/core';
-import { templateSourceUrl } from '@angular/compiler';
-import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-statistics',
